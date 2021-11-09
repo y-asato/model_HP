@@ -129,12 +129,12 @@ span {
   content: 'COMPANY';
 }
 
-.contact {
+#header .contact {
   background-color: #0E3B6A;
   text-align: center;
 }
 
-.contact a {
+#header .contact a {
   color: #fff;
   display: block;
   font-weight: bold;
@@ -143,7 +143,7 @@ span {
   transform: translateY(30%) translateX(4%);
 }
 
-.contact ::after {
+#header .contact ::after {
   content: 'CONTACT';
   display: block;
   font-size: 10px;
