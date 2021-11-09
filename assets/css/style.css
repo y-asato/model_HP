@@ -74,11 +74,39 @@ span {
 }
 
 #header .inner nav ul li {
+  border-bottom: 2px solid #c4c4c4;
+  display: inline-block;
   font-weight: bold;
-  margin-right: 65px;
+  margin-right: 6px;
+  padding-bottom: 5px;
+  position: relative;
+  text-align: center;
+  width: 115px;
+}
+
+#header .inner nav ul li:last-child {
+  margin-right: 10px;
 }
 
 #header .inner nav ul li ::after {
+  background: #333;
+  bottom: -2px;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+  width: 100%;
+}
+
+#header .inner nav ul li:hover ::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+#header .inner nav ul li ::before {
   display: block;
   font-size: 10px;
   font-weight: bold;
@@ -86,26 +114,38 @@ span {
 }
 
 #header .inner nav ul li:nth-child(1) ::after {
-  content: 'news';
+  content: 'NEWS';
 }
 
 #header .inner nav ul li:nth-child(2) ::after {
-  content: 'stars';
+  content: 'STARS';
 }
 
 #header .inner nav ul li:nth-child(3) ::after {
-  content: 'audition';
+  content: 'AUDITION';
 }
 
 #header .inner nav ul li:nth-child(4) ::after {
-  content: 'company';
+  content: 'COMPANY';
 }
 
-#header .contact {
-  border: 1px solid #000;
-  display: inline-block;
-  height: 90px;
+.contact {
+  background-color: #0E3B6A;
   text-align: center;
+}
+
+.contact a {
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  height: 90px;
   width: 140px;
+  transform: translateY(30%) translateX(4%);
+}
+
+.contact ::after {
+  content: 'CONTACT';
+  display: block;
+  font-size: 10px;
 }
 /*# sourceMappingURL=style.css.map */
