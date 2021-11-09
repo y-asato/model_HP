@@ -1,0 +1,111 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 0.875rem;
+  font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+a {
+  color: #000;
+  font-size: 0.875em;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+span {
+  font-size: 10px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  align-items: center;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+}
+
+#header .inner {
+  align-items: center;
+  display: flex;
+}
+
+#header .inner h1 {
+  font-size: 1.5rem;
+  padding: 24px 17px;
+  line-height: 1;
+}
+
+#header .inner h1 ::after {
+  content: 'PROFESSIONALAGENCY';
+  display: block;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  margin-top: .5rem;
+}
+
+#header .inner nav {
+  margin-left: auto;
+}
+
+#header .inner nav ul {
+  align-items: center;
+  display: flex;
+}
+
+#header .inner nav ul li {
+  font-weight: bold;
+  margin-right: 65px;
+}
+
+#header .inner nav ul li ::after {
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#header .inner nav ul li:nth-child(1) ::after {
+  content: 'news';
+}
+
+#header .inner nav ul li:nth-child(2) ::after {
+  content: 'stars';
+}
+
+#header .inner nav ul li:nth-child(3) ::after {
+  content: 'audition';
+}
+
+#header .inner nav ul li:nth-child(4) ::after {
+  content: 'company';
+}
+
+#header .contact {
+  border: 1px solid #000;
+  display: inline-block;
+  height: 90px;
+  text-align: center;
+  width: 140px;
+}
+/*# sourceMappingURL=style.css.map */
