@@ -153,6 +153,19 @@ span {
 Mainvisual
 -------------------------------------------*/
 #mainvisual {
-  margin-bottom: 50px;
+  background-image: url(/assets/img/top_hero.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+}
+
+#mainvisual span {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  display: block;
+  height: 500px;
+  margin-left: auto;
+  width: 55%;
 }
 /*# sourceMappingURL=style.css.map */
