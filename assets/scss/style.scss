@@ -134,18 +134,19 @@ span {
             }
         }
     }
-    
+
     .contact {
         background-color: #0E3B6A;
-        text-align: center;
+        
     
         a {
             color: #fff;
             display: block;
             font-weight: bold;
             height: 90px;
+            text-align: center;
+            transform: translateY(30%);
             width: 140px;
-            transform: translateY(30%) translateX(4%);
         }
     
         ::after {
@@ -154,4 +155,11 @@ span {
             font-size: 10px;
         }
     }
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+    margin-bottom: 50px;
 }

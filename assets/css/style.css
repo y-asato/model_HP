@@ -131,7 +131,6 @@ span {
 
 #header .contact {
   background-color: #0E3B6A;
-  text-align: center;
 }
 
 #header .contact a {
@@ -139,13 +138,21 @@ span {
   display: block;
   font-weight: bold;
   height: 90px;
+  text-align: center;
+  transform: translateY(30%);
   width: 140px;
-  transform: translateY(30%) translateX(4%);
 }
 
 #header .contact ::after {
   content: 'CONTACT';
   display: block;
   font-size: 10px;
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */
