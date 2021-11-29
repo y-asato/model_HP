@@ -18,18 +18,30 @@ a {
 }
 
 img {
-    max-width: 100%;
-    vertical-align: bottom;
+    height: 215px;
+    width: 215px;
 }
 
 li {
     list-style: none;
 }
 
+section {
+    max-width: 1150px;
+    text-align: center;
+}
+
 .wrapper {
     width: 100%;
     max-width: 2000px;
     margin: 0 auto;
+}
+
+.section-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 30px;
 }
 
 span {
@@ -166,6 +178,7 @@ Mainvisual
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
+    margin-bottom: 50px;
     width: 100%;
 
     span {
@@ -174,5 +187,90 @@ Mainvisual
         height: 500px;
         margin-left: auto;
         width: 55%;
+    }
+}
+
+/*-------------------------------------------
+News&Topics
+-------------------------------------------*/
+#news_topics {
+    margin-bottom: 50px;
+
+    .topic {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: bold;
+        .list {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+    
+            li {
+                background-color: #F37777;
+                height: 255px;
+                line-height: 280px;
+                margin-right: 20px;
+                width: 370px;
+    
+                &:last-child {
+                    margin-right: 0;
+                }
+    
+                a {
+                    display: block;   
+                }
+            }
+        }
+    }
+
+    .container {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        
+        .news {
+            background-color: #5CC2E2;
+            height: 620px;
+            line-height: 620px;
+            margin-right: 20px;
+            width: 860px;
+        }
+
+        .sns {
+            background-color: #7BF580;
+            height: 585px;
+            line-height: 585px;
+            width: 270px;
+        }
+    }
+}
+
+/*-------------------------------------------
+STARS
+-------------------------------------------*/
+#stars {
+    margin-bottom: 80px;
+
+    .stars_pic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            background-color: #000;
+            display: block;
+            height: 215px;
+            width: 215px;
+
+            img {
+                transition: all .5s;
+                &:hover {
+                    transition: all .5s;
+                    opacity: .5;
+                }
+            }
+        }
     }
 }
