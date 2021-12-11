@@ -2,109 +2,107 @@
 Footer
 -------------------------------------------*/
 #footer {
+	.wrapper {
+		background-color: #DFDFDF;
+		height: 335px;
 
-    .wrapper {
-        background-color: #DFDFDF;
-        height: 335px;
+		.flex {
+			display: flex;
+			justify-content: space-around;
+			padding: 30px 0;
 
-        .flex {
-            display: flex;
-            justify-content: space-around;
-            padding: 30px 0;
+			.info {
+				font-weight: bold;
 
-            .info {
-                font-weight: bold;
+				.logo {
+					font-size: 21px;
+					margin-bottom: 40px;
 
-                .logo {
-                    font-size: 21px;
-                    margin-bottom: 40px;
+					span {
+						font-size: 13px;
+						font-weight: normal;
+					}
+				}
 
-                    span {
-                        font-size: 13px;
-                        font-weight: normal;
-                    }
-                }
+				img {
+					height: 11.5px;
+					width: 15px;
+					margin-left: 7px;
+				}
 
-                img {
-                    height: 11.5px;
-                    width: 15px;
-                    margin-left: 7px;
-                }
+				a {
+					&:hover {
+						color: #007bff;
+						font-weight: 700;
+					}
+				}
+			}
 
-                a {
-                    &:hover {
-                        color: #007bff;
-                        font-weight: 700;
-                    }
-                }
-            }
+			.footer_nav_btn_list {
+				li {
+					::before {
+						content: '';
+						position: absolute;
+						bottom: -7px;
+						right: -7px;
+						width: 100%;
+						height: 2px;
+						background-color: #0E3B6A;
+						transition: 0.2s ease 0s;
+					}
 
-            .footer_nav_btn_list {
+					::after {
+						content: '';
+						position: absolute;
+						top: 7px;
+						right: -7px;
+						width: 2px;
+						height: 100%;
+						background-color: #0E3B6A;
+						transition: 0.2s ease 0.2s;
+					}
 
-                li {
-                    ::before {
-                        content: '';
-                        position: absolute;
-                        bottom: -7px;
-                        right: -7px;
-                        width: 100%;
-                        height: 2px;
-                        background-color: #0E3B6A;
-                        transition: 0.2s ease 0s;
-                    }
-    
-                    ::after {
-                        content: '';
-                        position: absolute;
-                        top: 7px;
-                        right: -7px;
-                        width: 2px;
-                        height: 100%;
-                        background-color: #0E3B6A;
-                        transition: 0.2s ease 0.2s;
-                    }
-    
-                    &:hover {
-                        ::before {
-                            width: 0%;
-                        }
+					&:hover {
+						::before {
+							width: 0%;
+						}
 
-                        ::after {
-                            height: 0%;
-                        }
-                    }
+						::after {
+							height: 0%;
+						}
+					}
 
-                    a {
-                        align-items: center;
-                        background-color: #ccc;
-                        color: #333;
-                        display: flex;
-                        font-size: 14px;
-                        font-weight: 700;
-                        height: 40px;
-                        justify-content: center;
-                        margin: 0 auto;
-                        position: relative;
-                        transition: .5s;
-                        width: 500px;
-    
-                        &:hover {
-                            text-decoration: none;
-                            background-color: #a0c4d3;
-                        }
-                    }
-                }
-            }
-        }
-    }
+					a {
+						align-items: center;
+						background-color: #ccc;
+						color: #333;
+						display: flex;
+						font-size: 14px;
+						font-weight: 700;
+						height: 40px;
+						justify-content: center;
+						margin: 0 auto;
+						position: relative;
+						transition: .5s;
+						width: 500px;
 
-    .copyright {
-        background-color: #000;
-        color: #fff;
-        font-size: 0.875rem;
-        height: 80px;
-        line-height: 80px;
-        text-align: center;
-        width: 100%;
-    }
+						&:hover {
+							text-decoration: none;
+							background-color: #a0c4d3;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.copyright {
+		background-color: #000;
+		color: #fff;
+		font-size: 0.875rem;
+		height: 80px;
+		line-height: 80px;
+		text-align: center;
+		width: 100%;
+	}
 }

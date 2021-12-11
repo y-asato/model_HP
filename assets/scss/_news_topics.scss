@@ -2,91 +2,91 @@
 News&Topics
 -------------------------------------------*/
 #news_topics {
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 
-    .topic {
-        font-family: Montserrat;
-        font-size: 20px;
-        font-weight: bold;
+	.topic {
+		font-family: Montserrat;
+		font-size: 20px;
+		font-weight: bold;
 
-        .list {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-    
-            li {
-                background-color: #F37777;
-                height: 255px;
-                line-height: 280px;
-                margin-right: 20px;
-                width: 370px;
-    
-                &:last-child {
-                    margin-right: 0;
-                }
-    
-                a {
-                    display: block;   
-                }
-            }
-        }
-    }
+		.list {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
 
-    .container {
-        font-family: Montserrat;
-        font-size: 20px;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        
-        .news {
-            height: 620px;
-            margin-right: 20px;
-            width: 860px;
+			li {
+				background-color: #F37777;
+				height: 255px;
+				line-height: 280px;
+				margin-right: 20px;
+				width: 370px;
 
-            .newslist {
-                max-width: 860px;
-                margin: 0 auto;
+				&:last-child {
+					margin-right: 0;
+				}
 
-                @media screen and (max-width: 800px) {
-                    .newslist {
-                        font-size: 12px;
-                        padding: 0 15px;
-                    }
-                }
+				a {
+					display: block;   
+				}
+			}
+		}
+	}
 
-                li {
-                    display: flex;
-                    align-items: flex-start;
-                    padding: 20px 10px;
-                    border-top: 2px solid black;
-                    line-height: 1.5;
+	.container {
+		font-family: Montserrat;
+		font-size: 20px;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		
+		.news {
+			height: 620px;
+			margin-right: 20px;
+			width: 860px;
 
-                    &:last-child {
-                        border-bottom: 2px solid black;
-                    }
+			.newslist {
+				max-width: 860px;
+				margin: 0 auto;
 
-                    time {
-                        padding-right: 20px;
-                    }
+				@media screen and (max-width: 800px) {
+					.newslist {
+						font-size: 12px;
+						padding: 0 15px;
+					}
+				}
 
-                    a {
-                        color: cornflowerblue;
-                        font-weight: normal;
-                        text-decoration: none;
-                    }
+				li {
+					display: flex;
+					align-items: flex-start;
+					padding: 20px 10px;
+					border-top: 2px solid black;
+					line-height: 1.5;
 
-                    &:hover {
-                        background: #e6e6e6;
-                        transition: all ease .5s;
-                    }
-                }
-            }
+					&:last-child {
+						border-bottom: 2px solid black;
+					}
 
-            .sns {
-                height: 585px;
-                width: 270px;
-            }
-        }
-    }
+					time {
+						padding-right: 20px;
+					}
+
+					a {
+						color: cornflowerblue;
+						font-weight: normal;
+						text-decoration: none;
+					}
+
+					&:hover {
+						background: #e6e6e6;
+						transition: all ease .5s;
+					}
+				}
+			}
+
+			.sns {
+				height: 585px;
+				width: 270px;
+			}
+		}
+	}
 }
