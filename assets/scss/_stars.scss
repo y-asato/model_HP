@@ -1,0 +1,63 @@
+/*-------------------------------------------
+Stars
+-------------------------------------------*/
+#stars {
+    margin-bottom: 80px;
+
+    .stars_pic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            display: block;
+            height: 215px;
+            overflow: hidden;
+            position: relative;
+            width: 215px;
+
+            .mask {
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background-color: rgba(0,0,0,0.6);
+                transition: all .5s ease;
+                width: 100%;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                .caption {
+                    color: #fff;
+                    font-size: 18px;
+                    
+                    .bwh_list {
+                        border-collapse: collapse;
+                        margin: 30px auto;
+                        width: 80%;
+
+                        td {
+                            border-bottom: 1px solid #dfdfdf;
+
+                            &:nth-of-type(1) {
+                                color: #FFEB95;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+
+            img {
+                transition: all .5s;
+                &:hover {
+                    transition: all .5s;
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}

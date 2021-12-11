@@ -1,0 +1,125 @@
+/*-------------------------------------------
+Header
+-------------------------------------------*/
+#header {
+    align-items: center;
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+
+    .inner {
+        align-items: center;
+        display: flex;
+
+        .logo {
+            font-size: 1.5rem;
+            padding: 24px 17px;
+            line-height: 1;
+
+            ::after {
+                content: 'PROFESSIONALAGENCY';
+                display: block;
+                font-size: 10px;
+                letter-spacing: 2.5px;
+                margin-top: .5rem;
+            }
+        }
+
+        nav {
+            margin-left: auto;
+
+            ul {
+                align-items: center;
+                display: flex;
+    
+                li {
+                    border-bottom: 2px solid #c4c4c4;
+                    display: inline-block;
+                    font-weight: bold;
+                    margin-right: 6px;
+                    padding-bottom: 5px;
+                    position: relative;
+                    text-align: center;
+                    width: 115px;
+
+                    &:last-child {
+                        margin-right: 10px;
+                    }
+
+                    ::after {
+                        background: #333;
+                        bottom: -2px;
+                        content: '';
+                        height: 2px;
+                        left: 0;
+                        position: absolute;
+                        transform: scale(0, 1);
+                        transform-origin: right top;
+                        transition: transform .3s;
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        ::after {
+                            transform-origin: left top;
+                            transform: scale(1, 1);
+                        }
+                    }
+
+                    ::before {
+                        display: block;
+                        font-size: 10px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    &:nth-child(1) {
+                        ::after {
+                            content: 'NEWS';
+                        }
+                    }
+                    &:nth-child(2) {
+                        ::after {
+                            content: 'STARS';
+                        }
+                    }
+                    &:nth-child(3) {
+                        ::after {
+                            content: 'AUDITION';
+                        }
+                    }
+                    &:nth-child(4) {
+                        ::after {
+                            content: 'COMPANY';
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        background-color: #0E3B6A;
+        transition: .2s;
+
+        &:hover {
+            background: #1961aff6;
+            transition: .2s;
+        }
+
+        a {
+            color: #fff;
+            display: block;
+            font-weight: bold;
+            height: 90px;
+            text-align: center;
+            transform: translateY(30%);
+            width: 140px;
+        }
+    
+        ::after {
+            content: 'CONTACT';
+            display: block;
+            font-size: 10px;
+        }
+    }
+}

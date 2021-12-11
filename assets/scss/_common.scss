@@ -1,0 +1,47 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 0.875rem;
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+a {
+    color: #000;
+    font-size: 0.875em;
+    text-decoration: none;
+}
+
+img {
+    height: 215px;
+    width: 215px;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    max-width: 1150px;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+span {
+    font-size: 10px;
+}
