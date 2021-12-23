@@ -1,0 +1,55 @@
+.starsbox {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 35px;
+
+	.stars_mainimg {
+		img {
+			height: 565px;
+			margin-right: 35px;
+			width: 540px;
+		}
+	}
+
+	.stars_txt {
+		h3{
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+		h2 {
+			font-size: 35px;
+			margin-bottom: 10px;
+		}
+		h4 {
+			color: #757575;
+			font-size: 16px;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 13px;
+			margin-bottom: 34px;
+		}
+
+		table {
+			border-collapse: separate;
+			border-spacing: 5px;
+			width: 604px;
+			max-width: 100%;
+
+			th,td {
+				background-color: #F0F0F0;
+				height: 35px;
+				padding: 5px 15px;
+			}
+
+			thead {
+				text-align: left;
+			}
+
+			th {
+				width: 35%;
+			}
+		}
+	}
+}

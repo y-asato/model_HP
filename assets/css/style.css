@@ -171,18 +171,15 @@ Header
 Common__header
 -------------------------------------------*/
 #common_header {
-  background-color: #c4c4c4;
+  background-color: #fff;
   height: 90px;
   text-align: center;
-  /*-------------------------------------------
-	btn08
-	-------------------------------------------*/
 }
 
 #common_header .logo {
   font-size: 1.5rem;
-  padding: 24px 17px;
   line-height: 1;
+  padding: 24px 17px;
 }
 
 #common_header .logo ::after {
@@ -193,50 +190,140 @@ Common__header
   margin-top: .5rem;
 }
 
-#common_header .btn-trigger, #common_header .btn-trigger span {
-  position: relative;
-  width: 50px;
-  height: 44px;
-  cursor: pointer;
-}
-
-#common_header .btn-trigger span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #000;
-  border-radius: 4px;
-}
-
-#common_header .btn-trigger span:nth-of-type(1) {
-  top: 0;
-}
-
-#common_header .btn-trigger span:nth-of-type(2) {
-  top: 20px;
-}
-
-#common_header .btn-trigger span:nth-of-type(3) {
+/*============
+nav
+=============*/
+.common_nav {
+  background: #ffffff;
   bottom: 0;
-}
-
-#common_header .btn-trigger, #common_header .btn-trigger span {
-  display: inline-block;
+  font-weight: bold;
+  display: block;
+  left: -300px;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
   transition: all .5s;
-  box-sizing: border-box;
+  width: 300px;
+  -webkit-overflow-scrolling: touch;
+  z-index: 3;
 }
 
-#common_header #btn08 .active span :nth-of-type(1) {
-  transform: translateY(20px) rotate(-315deg);
+@media screen and (max-width: 767px) {
+  .common_nav {
+    left: -220px;
+    width: 220px;
+  }
 }
 
-#common_header #btn08 .active span :nth-of-type(2) {
+.common_nav .inner {
+  padding: 25px;
+}
+
+.common_nav .inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.common_nav .inner ul li {
+  border-bottom: 1px solid #333;
+  margin: 0;
+  position: relative;
+}
+
+.common_nav .inner ul li a {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.common_nav .inner ul li a:hover {
+  background: #e4e4e4;
+}
+
+.open nav {
+  left: 0;
+  opacity: 1;
+}
+
+/*============
+.toggle_btn
+=============*/
+.toggle_btn {
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  transition: all .5s;
+  width: 30px;
+  z-index: 3;
+}
+
+.toggle_btn span {
+  background-color: #333;
+  border-radius: 4px;
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: all .5s;
+  width: 30px;
+}
+
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+
+.open .toggle_btn span {
+  background-color: #fff;
+}
+
+.open .toggle_btn span:nth-child(1) {
+  transform: translateY(10px) rotate(-315deg);
+}
+
+.open .toggle_btn span:nth-child(2) {
   opacity: 0;
 }
 
-#common_header #btn08 .active span :nth-of-type(3) {
-  transform: translateY(-20px) rotate(315deg);
+.open .toggle_btn span:nth-child(3) {
+  transform: translateY(-10px) rotate(315deg);
+}
+
+/*============
+#mask
+=============*/
+#mask {
+  display: none;
+  transition: all .5s;
+}
+
+.open #mask {
+  cursor: pointer;
+  background: #000;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: .8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 /*-------------------------------------------
@@ -258,6 +345,60 @@ Mainvisual
   height: 500px;
   margin-left: auto;
   width: 55%;
+}
+
+.starsbox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.starsbox .stars_mainimg img {
+  height: 565px;
+  margin-right: 35px;
+  width: 540px;
+}
+
+.starsbox .stars_txt h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.starsbox .stars_txt h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.starsbox .stars_txt h4 {
+  color: #757575;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.starsbox .stars_txt p {
+  font-size: 13px;
+  margin-bottom: 34px;
+}
+
+.starsbox .stars_txt table {
+  border-collapse: separate;
+  border-spacing: 5px;
+  width: 604px;
+  max-width: 100%;
+}
+
+.starsbox .stars_txt table th, .starsbox .stars_txt table td {
+  background-color: #F0F0F0;
+  height: 35px;
+  padding: 5px 15px;
+}
+
+.starsbox .stars_txt table thead {
+  text-align: left;
+}
+
+.starsbox .stars_txt table th {
+  width: 35%;
 }
 
 /*-------------------------------------------

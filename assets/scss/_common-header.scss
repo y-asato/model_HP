@@ -3,14 +3,14 @@ Common__header
 -------------------------------------------*/
 
 #common_header {
-	background-color: #c4c4c4;
+	background-color: #fff;
 	height: 90px;
 	text-align: center;
 
 	.logo {
 		font-size: 1.5rem;
-		padding: 24px 17px;
 		line-height: 1;
+		padding: 24px 17px;
 
 		::after {
 			content: 'PROFESSIONALAGENCY';
@@ -20,59 +20,140 @@ Common__header
 			margin-top: .5rem;
 		}
 	}
+}
 
-	.btn-trigger {
-		position: relative;
-		width: 50px;
-		height: 44px;
-		cursor: pointer;
+/*============
+nav
+=============*/
+.common_nav {
+	background: #ffffff;
+	bottom: 0;
+	font-weight: bold;
+	display: block;
+	left: -300px;
+	opacity: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: fixed;
+	top: 0;
+	transition: all .5s;	
+	width: 300px;
+	-webkit-overflow-scrolling: touch;
+	z-index: 3;
 
-		span {
-			position: absolute;
-			left: 0;
-			width: 100%;
-			height: 4px;
-			background-color: #000;
-			border-radius: 4px;
+	@media screen and (max-width: 767px) {
+		left: -220px;
+		width: 220px;
+	}
 
-			&:nth-of-type(1) {
-				top: 0;
-			}
-			&:nth-of-type(2) {
-				top: 20px;
-			}
-			&:nth-of-type(3) {
-				bottom: 0;
+	.inner {
+		padding: 25px;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				border-bottom: 1px solid #333;
+				margin: 0;
+				position: relative;
+
+				a {
+					color: #333;
+					display: block;
+					font-size: 14px;
+					padding: 1em;
+					text-decoration: none;
+					transition-duration: 0.2s;
+
+					&:hover {
+						background: #e4e4e4;
+					}
+				}
 			}
 		}
 	}
+}
 
-	.btn-trigger {
-		display: inline-block;
+.open {
+	nav {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+/*============
+.toggle_btn
+=============*/
+.toggle_btn {
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	position: fixed;
+	right: 30px;
+	top: 30px;
+	transition: all .5s;
+	width: 30px;
+	z-index: 3;
+
+	span {
+		background-color: #333;
+		border-radius: 4px;
+		display: block;
+		height: 2px;
+		left: 0;
+		position: absolute;
 		transition: all .5s;
-		box-sizing: border-box;
+		width: 30px;
 
-		span {
-			@extend .btn-trigger
+		&:nth-child(1) {
+			top: 4px;
+		}
+		&:nth-child(2) {
+			top: 14px;
+		}
+		&:nth-child(3) {
+			bottom: 4px;
 		}
 	}
+}
 
-	/*-------------------------------------------
-	btn08
-	-------------------------------------------*/
-	#btn08 {
-		.active {
-			span {
-				:nth-of-type(1) {
-					transform: translateY(20px) rotate(-315deg);
-				}
-				:nth-of-type(2) {
-					opacity: 0;
-				}
-				:nth-of-type(3) {
-					transform: translateY(-20px) rotate(315deg);
-				}
+.open {
+	.toggle_btn {
+		span {
+			background-color: #fff;
+		
+			&:nth-child(1) {
+				transform: translateY(10px) rotate(-315deg);
+			}
+			&:nth-child(2) {
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				transform: translateY(-10px) rotate(315deg);
 			}
 		}
 	}
+}
+
+/*============
+#mask
+=============*/
+#mask {
+	display: none;
+	transition: all .5s;
+}
+
+.open #mask {
+	cursor: pointer;
+	background: #000;
+	display: block;
+	height: 100%;
+	left: 0;
+	opacity: .8;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
 }
